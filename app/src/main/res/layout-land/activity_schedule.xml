@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScheduleActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/forest_green"
+        android:id="@+id/rellayout">
+
+        <TextView
+            android:id="@+id/Date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:layout_alignParentTop="true"
+
+            android:layout_marginTop="0dp"
+            android:text="SCHEDULE A MEETING"
+            android:textSize="20dp"
+            android:gravity="center"
+
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/ic_chevron_left_white_24dp"
+            android:background="@android:color/transparent"
+            android:text="BACK"
+            android:textSize="10dp"
+            android:textColor="@android:color/white"
+            android:id="@+id/backbutton"/>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:id="@+id/linearlay1"
+        android:layout_marginTop="80dp">
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:background="@drawable/roundedbuttonnobackgroundcolor"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        android:layout_marginBottom="4dp"
+        android:drawableRight="@drawable/ic_details_black_24dp"
+        android:padding="10dp"
+        android:id="@+id/dateButton"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:id="@+id/linearlay2"
+        android:layout_below="@id/linearlay1"
+        android:layout_marginTop="25dp">
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/roundedbuttonnobackgroundcolor"
+        android:drawableRight="@drawable/ic_details_black_24dp"
+        android:padding="10dp"
+        android:id="@+id/StartButton"/>
+
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/roundedbuttonnobackgroundcolor"
+        android:drawableRight="@drawable/ic_details_black_24dp"
+        android:padding="10dp"
+        android:id="@+id/EndButton"/>
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/linearlay2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="4dp"
+        android:hint="Description"
+        android:gravity="top|left"
+        android:padding="10dp"
+        android:background="@drawable/edittextborderandrounded"
+
+        android:id="@+id/descriptionText"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/descriptionText"
+        android:layout_marginBottom="4dp"
+
+
+        android:text="             SCHEDULE COMPANY MEETING             "
+        android:background="@drawable/roundedbutton"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/submitbutton"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"/>
+
+
+
+</RelativeLayout>

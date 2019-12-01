@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TodayActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/forest_green"
+        android:id="@+id/rellayout">
+
+        <TextView
+            android:id="@+id/Date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="134dp"
+            android:layout_marginLeft="134dp"
+            android:layout_marginTop="0dp"
+            android:text="Date"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/ic_chevron_left_white_24dp"
+            android:background="@android:color/transparent"
+            android:text="PREV"
+            android:textColor="@android:color/white"
+            android:id="@+id/previousbutton"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableRight="@drawable/ic_chevron_right_white_24dp"
+            android:background="@android:color/transparent"
+            android:text="NEXT"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/white"
+            android:id="@+id/nextbutton"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below= "@id/rellayout"
+        android:layout_above="@id/bottomrel"
+        android:id="@+id/meetingrecycler"
+
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gainsboro"
+        android:id="@+id/bottomrel">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="             SCHEDULE COMPANY MEETING             "
+        android:background="@drawable/roundedbutton"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+
+        android:id="@+id/schedulebutton"/>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

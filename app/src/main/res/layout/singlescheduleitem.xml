@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="@color/gainsboro">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="31.5dp"
+    android:text="11:00 A.M - 12:00 P.M"
+    android:gravity="bottom"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:textColor="@color/dark_gray"
+    android:textStyle="bold"
+    android:id="@+id/duration"
+    />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/duration"
+        android:layout_marginTop="1dp"
+        android:background="@color/dark_gray"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/line"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30.5dp"
+        android:layout_below="@id/line"
+        android:id="@+id/description"
+        android:gravity="top"
+        android:text="Meeting Text"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="4dp"
+        android:singleLine="true"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:background="@color/black"
+        android:layout_alignParentBottom="true"
+
+        />
+
+
+
+
+
+</RelativeLayout>
